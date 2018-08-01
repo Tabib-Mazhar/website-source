@@ -1,0 +1,26 @@
+baseURL:  "http://rulematrix.github.io/"
+languageCode:  "en-us"
+title:  "RuleMatrix"
+description:  "RuleMatrix is an interactive visualization tool  that helps understand the input-output behavior of machine learning models"
+# theme:  "kube"
+
+Params:
+  RSSLink: "/index.xml"
+  author: "Yao" # add your company name
+  demo: "https://iml-test2.herokuapp.com"
+  github: "https://github.com/rulematrix/rule-matrix-py" # add your github profile name
+  twitter: "" # add your twitter profile
+  email: "yaoming.thu@gmail.com"
+
+menu:
+  main:
+  - name: "Examples"
+    weight: 20
+    url: "/examples"
+  - name:  "Docs"
+    weight:  40
+    url:  "/docs/"
+  - name:  "About"
+    weight: 80
+    url:  "/about/"
+

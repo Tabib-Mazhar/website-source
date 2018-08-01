@@ -1,0 +1,59 @@
+{{ define "title"}} {{ .Site.Title}} {{end}}
+{{ define "header"}} {{ partial "header" .}} {{end}}
+{{ define "main"}}
+
+<div id="main">
+  <div id="hero">
+    <h1>{{.Title}}</h1>
+    <p>{{.Description}}</p>
+  </div>
+  <div id="action-buttons">
+    <a class="button primary big" href="{{.Site.Params.demo}}" onclick="_gaq.push(['_trackEvent', 'rulematrix', 'demo']);">Demo</a>
+    <a class="button outline big" href="{{.Site.Params.github}}" onclick="_gaq.push(['_trackEvent', 'rulematrix', 'github']);">View on Github</a>
+  </div>
+  <!-- <div class="message focus" data-component="message"> <span class="close small"></span>
+    <a class="button inverted small " href="https://imperavi.com/kube/" >Kube </a> from <a href="https://imperavi.com/">imperavi</a> is an awesome <mark>CSS & JS Framework</mark> and i designed this template for <a href="https://gohugo.io">hugo</a> with the same original philosophy !
+  </div> -->
+  <div id="kube-features">
+    <div class="row gutters">
+      <div class="col col-4 item">
+        <figure>
+          <img alt="Baseline" height="48" src="{{ "/img/kube/icon-baseline.png" | relURL }}" width="48">
+        </figure>
+        <h3>Model Agnostics</h3>
+        <p>Through rule induction algorithm, RuleMatrix is model agnostic.</p>
+      </div>
+      <div class="col col-4 item">
+        <figure>
+          <img alt="Typography" height="48" src="{{ "/img/kube/icon-typo.png" | relURL }}" width="48">
+        </figure>
+        <h3>Interactive</h3>
+        <p>Powered by morden browser, RuleMatrix is fully interactive.</p>
+      </div>
+      <div class="col col-4 item">
+        <figure>
+          <img alt="Minimalism" height="48" src="{{ "/img/kube/icon-minimalism.png" | relURL }}" width="48">
+        </figure>
+        <h3>Analytics</h3>
+        <p>Not only for exploration, you can also use rulematrix to help analyze your model and data.</p>
+      </div>
+    </div>
+    <!-- <div class="row gutters">
+      <div class="col col-4 item">
+        <h4>Mobile-first Design</h4>
+        <p>Every element in kube is mobile-first and fully embraces latest and greatest tech.</p>
+      </div>
+      <div class="col col-4 item">
+        <h4>Cross-browser</h4>
+        <p>Kube works in all modern browsers, both desktop and mobile, including latest Chrome, Firefox, Safari, Opera, IE and Edge.</p>
+      </div>
+      <div class="col col-4 item">
+        <h4>License</h4>
+        <p>Kube licensed under <a href="https://opensource.org/licenses/MIT">MIT</a>.<br>
+      Kube Framework is absolutely free for personal or commercial use.</p>
+    </div> -->
+  </div>
+</div>
+</div>
+{{ end }}
+{{ define "footer"}} {{ partial "footer" .}} {{end}}
